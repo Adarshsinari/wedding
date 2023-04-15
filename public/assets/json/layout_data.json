@@ -1,0 +1,45 @@
+{
+   "header":{
+    "site_name":"Weddings.",
+    "home_url":"/",
+    "page_links":[
+        {
+            "url":"/",
+            "text":"Home"
+
+        },
+        {
+            "url":"/services",
+            "text":"Services"
+
+        },
+        {
+            "url":"/projects",
+            "text":"Projects"
+
+        },
+        {
+            "url":"/contact",
+            "text":"Contact"
+
+        },
+        {
+            "url":"#footer",
+            "text":"About"
+
+        }
+    ]
+   },
+   "footer":{
+        "copy_right":"Copyright Wedding. All Rights Reserved",
+        "site_name":"Weddings.",
+        "address":"Aquem-alto, Margao, Goa, India",
+        "phone_no":"9876543210",
+        "email": "weddingsDot@gmail.com",
+        "socila_media_links":{
+            "fb":"facebook/weddingsDot",
+            "ig":"instagram/weddingsDot",
+            "tw":"twitter/weddingsDot"
+        }
+   }
+}
