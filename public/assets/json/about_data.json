@@ -1,0 +1,51 @@
+{
+    "team": {
+        "title": "Our Team",
+        "text": "Inventore aliquam beatae at et id alias olor.",
+        "data": [
+            {
+                "img": "assets/img/team/member-1.jpg",
+                "name": "Member One",
+                "designation": "member",
+                "text": "Tipsum dolor sit sed do incididunt ut labore et do"
+            },
+            {
+                "img": "assets/img/team/member-2.jpg",
+                "name": "Member Two",
+                "designation": "member",
+                "text": "Tipsum dolor sit sed do incididunt ut labore et do"
+            },
+            {
+                "img": "assets/img/team/member-3.jpg",
+                "name": "Member Three",
+                "designation": "member",
+                "text": "Tipsum dolor sit sed do incididunt ut labore et do"
+            }
+        ]
+    },
+    "stats": [
+        {
+            "icon": "bi bi-emoji-smile color-blue flex-shrink-0",
+            "label": "Happy Clients",
+            "count": 10
+        },
+        {
+            "icon": "bi bi-journal-richtext color-orange flex-shrink-0",
+            "label": "Projects",
+            "count": 20
+        },
+        {
+            "icon": "bi bi-people color-pink flex-shrink-0",
+            "label": "Team Mates",
+            "count": 30
+        }
+    ],
+    "info": {
+        "header":"This is Us.",
+        "title":"Est 0001",
+        "sub_title": "Our Work",
+        "text": "Inventore aliquam beatae at et id alias. Ipsa dolores amet consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur provident autem in reiciendis rerum at dolor. Aliquam consectetur laudantium temporibus dicta minus dolor.",
+        "img": "assets/img/about.jpg"
+        
+    }
+}
