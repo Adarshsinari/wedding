@@ -3,14 +3,10 @@
     <div class="info d-flex align-items-center">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 text-center info-box rounded">
-            <h2 data-aos="fade-down">Welcome to <span>UpConstruction</span></h2>
-            <p data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
-              
-
-            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+          <div class="col-lg-5 text-center info-box rounded p-3 shadow">
+            <h2 data-aos="fade-down">{{hero-info.title}}</h2>
+            <p data-aos="fade-up">{{hero-info.text}}</p>
+            <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">{{hero-info.btn}}</a>
           </div>
         </div>
       </div>
@@ -19,10 +15,9 @@
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
       <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)">
-      </div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-2.jpg)"></div>
-      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-3.jpg)"></div>
-      
+      </div>      
+      <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/hero-carousel-1.jpg)">
+      </div> 
 
       <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -92,6 +87,115 @@
 
       </div>
     </section><!-- End Get Started Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>{{services.title}}</h2>
+          <p>{{services.text}}</p>
+        </div>
+
+        <div class="row gy-4">
+          {{#each  services.data}}
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid {{this.icon}}"></i>
+              </div>
+              <h3>{{this.name}}</h3>
+              <p>{{this.text}}</p>
+              <a href="#" class="readmore stretched-link">Learn more <i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          {{/each}}
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>{{projects.title}}</h2>
+          <p>{{projects.text}}</p>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            {{#each  projects.type}}
+            <li data-filter=".filter-{{this.name}}">{{this.text}}</li>
+            {{/each}}
+          </ul><!-- End Projects Filters -->
+
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          {{#each  projects.data}}
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{{this.type}}}">
+              <div class="portfolio-content h-100">
+                <img src={{this.img}} class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>{{this.type}}</h4>
+                  <p>{{this.text}}</p>
+                  <a href={{this.img}} title="Remodeling 1"
+                    data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i
+                      class="bi bi-zoom-in"></i></a>
+                  <a href="#" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+          {{/each}}
+          </div><!-- End Projects Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Projects Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Testimonials</h2>
+          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia
+            reprehenderit sunt deleniti</p>
+        </div>
+
+        <div class="slides-2 swiper">
+          <div class="swiper-wrapper">
+            {{#each  testimonials}}
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>{{this.name}}</h3>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>{{this.text}}
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+            {{/each}}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
 
 
 

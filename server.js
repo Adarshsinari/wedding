@@ -4,6 +4,7 @@ const path = require('path')
 const port = 3000
 const { engine } = require('express-handlebars')
 const layout_data = require('./public/assets/json/layout_data.json');
+const page_data = require('./public/assets/json/index_data.json');
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -13,7 +14,7 @@ app.use(express.static('public'));
 
 // route: Get '/'
 app.get('/', (req, res) => {
-  res.render('users/index');
+  res.render('users/index',page_data);
 })
 
 // route: Get '/services'

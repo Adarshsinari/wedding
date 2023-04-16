@@ -1883,7 +1883,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   inset: 0;
 }
@@ -1893,11 +1893,6 @@ section {
   inset: 0;
   z-index: 2;
 }
-
-.hero .info .info-box {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 
 @media (max-width: 768px) {
   .hero .info {
