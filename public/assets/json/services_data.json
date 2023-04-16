@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "name": "Decorations",
+            "text": "Lorem labore et hgj jkj jnkj dolore magna aliqua.",
+            "icon": "fa-umbrella-beach"
+        },
+        {
+            "name": "Dress",
+            "text": "Lorem labore et hgj jkj jnkj dolore magna aliqua.",
+            "icon": "fa-user-tie"
+        },
+        {
+            "name": "Drinks & Bar",
+            "text": "Lorem labore et hgj jkj jnkj dolore magna aliqua.",
+            "icon": "fa-martini-glass-citrus"
+        }
+    ]
+}

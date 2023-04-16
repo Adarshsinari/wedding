@@ -20,14 +20,14 @@ app.get('/', (req, res) => {
 
 // route: Get '/services'
 app.get('/services', (req, res) => {
-  const page_data = require('./public/assets/json/index_data.json');
-  res.render('users/services');
+  const page_data = require('./public/assets/json/services_data.json');
+  res.render('users/services',page_data);
 })
 
 // route: Get '/projects'
 app.get('/projects', (req, res) => {
-  const page_data = require('./public/assets/json/index_data.json');
-  res.render('users/projects');
+  const page_data = require('./public/assets/json/projects_data.json');
+  res.render('users/projects',page_data);
 })
 
 // route: Get '/contact'

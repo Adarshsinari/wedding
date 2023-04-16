@@ -1,0 +1,45 @@
+{
+    "projects": {
+        "data": [
+            {
+                "type": "decor",
+                "text": "Lorem labore et dolore magna aliqua.",
+                "img": "assets/img/projects/decor-1.jpg"
+            },
+            {
+                "type": "dress",
+                "text": "Lorem labore et dolore magna aliqua.",
+                "img": "assets/img/projects/dress-1.jpg"
+            },
+            {
+                "type": "bar",
+                "text": "Lorem labore et dolore magna aliqua.",
+                "img": "assets/img/projects/bar-1.jpg"
+            },
+            {
+                "type": "decor",
+                "text": "Lorem labore et dolore magna aliqua.",
+                "img": "assets/img/projects/decor-2.jpg"
+            },
+            {
+                "type": "dress",
+                "text": "Lorem labore et dolore magna aliqua.",
+                "img": "assets/img/projects/dress-2.jpg"
+            }
+        ],
+        "type": [
+            {
+                "name": "decor",
+                "text": "Decorations"
+            },
+            {
+                "name": "dress",
+                "text": "Dresses"
+            },
+            {
+                "name": "bar",
+                "text": "Drinks & Bar"
+            }
+        ]
+    }
+}
