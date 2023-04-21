@@ -1883,7 +1883,7 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.7);
+
   position: absolute;
   inset: 0;
 }
@@ -1892,6 +1892,11 @@ section {
   position: absolute;
   inset: 0;
   z-index: 2;
+}
+
+.hero .info .info-box {
+  background-color: rgba(243, 119, 119, 0.219);
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 768px) {

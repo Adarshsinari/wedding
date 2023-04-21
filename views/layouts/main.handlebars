@@ -48,7 +48,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           {{#each  data.header.page_links}}
-            <li><a href={{this.url}}>{{this.text}}</a></li>
+            <li><a href={{this.url}} class="nav-link" >{{this.text}}</a></li>
           {{/each}}
         </ul>
       </nav><!-- .navbar -->
@@ -121,5 +121,22 @@
   <script src="assets/js/main.js"></script>
 
 </body>
+<script>
+// Get the current URL
+const currentUrl = window.location.href;
+
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Loop through the links and add the "active" class to the one with the matching URL
+navLinks.forEach(link => {
+  if (link.href === currentUrl) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});
+
+</script>
 
 </html>
