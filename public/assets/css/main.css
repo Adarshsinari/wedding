@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
+  --color-primary: #F13C20;
   --color-secondary: #52565e;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #dd270b;
   text-decoration: none;
 }
 
@@ -187,7 +187,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
+  background: #dd270b;
   color: #fff;
 }
 
@@ -2580,9 +2580,13 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+#footer{
+  background: url("../img/footer-bg.jpeg");
+  background-size: cover;
+}
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
   background-size: cover;
   font-size: 14px;
   padding: 80px 0 60px 0;
