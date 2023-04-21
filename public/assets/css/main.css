@@ -121,7 +121,6 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
 }
@@ -1883,7 +1882,6 @@ section {
 
 .hero .carousel-item::before {
   content: "";
-
   position: absolute;
   inset: 0;
 }
@@ -1895,7 +1893,6 @@ section {
 }
 
 .hero .info .info-box {
-  background-color: rgba(243, 119, 119, 0.219);
   backdrop-filter: blur(10px);
 }
 
@@ -2594,7 +2591,6 @@ section {
 
 .footer:before {
   content: "";
-  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   inset: 0;
 }
