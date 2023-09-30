@@ -2693,3 +2693,11 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
+
+.blur-bg {
+  background-color: inherit;
+  padding: 1em;
+  backdrop-filter: blur(5px) brightness(0.9);
+  border-radius: 7px;
+}

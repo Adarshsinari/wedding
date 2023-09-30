@@ -46,7 +46,7 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-        <ul>
+        <ul class="blur-bg">
           {{#each  data.header.page_links}}
             <li><a href={{this.url}} class="nav-link" >{{this.text}}</a></li>
           {{/each}}
@@ -67,16 +67,16 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>{{data.footer.site_name}}</h3>
-              <p>{{data.footer.address}}<br>
-                <strong>Phone:</strong> {{data.footer.phone_no}}<br>
-                <strong>Email:</strong> {{data.footer.email}}<br>
-              </p>
+              {{!-- <h3>{{data.footer.site_name}}</h3>
+              <p><strong>{{data.footer.address}}</strong><br>
+                <strong>Phone: {{data.footer.phone_no}}</strong><br>
+                <strong>Email: {{data.footer.email}}</strong><br>
+              </p> --}}
               
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="social-links d-flex mt-3">
+            <div class="social-links d-flex mt-3 blur-bg">
               <a href={{data.footer.socila_media_links.tw}} class="col d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
               <a href={{data.footer.socila_media_links.fb}} class="col d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
               <a href={{data.footer.socila_media_links.ig}} class="col d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
